@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid black;
+        }
+
+        .dark {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="demo">
+        <h1>This is the heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perderendis</p>
+    </div>
+    <button onclick="enableLightMode()">Light Mode</button>
+    <button onclick="enableDarkMode()">Dark Mode</button>
+
+    <script>
+        function enableLightMode() {
+            document.getElementById("demo").classList.remove('dark');
+        }
+
+        function enableDarkMode() {
+            document.getElementById("demo").classList.add('dark');
+        }
+    </script>
+</body>
+</html>
